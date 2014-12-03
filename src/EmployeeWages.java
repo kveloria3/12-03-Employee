@@ -1,34 +1,30 @@
 // placeholder for your main method
-public class EmployeeWages {
-    public static void main(String[] args) {
+public class EmployeeWages 
+{
+    public static void main(String[] args) 
+    {
         // replace <put your name here> with your name!
         System.out.println("Student: <put your name here>");
         
-        // Create two instances of class Employee emp1 & emp2
+        Employee emp1 = new Employee("Arjun", .10, 12);
+        Employee emp2 = new Employee("Kaitlyn", 100000000000000000.00, 18);
         
-        // print emp1 
+        System.out.println(emp1.toString()+"\t weekly salary: $"+emp1.getWeeklySalary()+"\t annual salary: $"+emp1.getYearlySalary());
+        System.out.println(emp2.toString());
         
-        // print emp1's weekly salary (put a tab first) like "       weekly salary: $360.00" 
+        emp2.setName("Elyse");
         
-        // print emp1's annual salary (put a tab first) like "       annual salary: $18,720.00" 
+        emp2.setWage(100000.00);
         
-        // print emp2
+        emp2.setHours(10);
         
-        // change emp2's name
+        System.out.println(emp2.toString()+"\t weekly salary: $"+emp2.getWeeklySalary()+"\t annual salary: $"+emp2.getYearlySalary());
+       
         
-        // change emp2's wage
+        emp2.giveRaise();
+       
         
-        // change emp2's hours
-        
-        // print emp2 
-        
-        // print emp2's weekly salary (put a tab first) like "       weekly salary: $360.00" 
-        
-        // print emp2's annual salary (put a tab first) like "       annual salary: $18,720.00" 
-        
-        // give emp2 a raise
-        
-        // print emp2
+        System.out.println(emp2.toString());
         
     }
 }
